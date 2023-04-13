@@ -1,268 +1,289 @@
 * {
-    margin: 0px;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
 }
 
 /* header */
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
 header {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  /* position:relative; */
 }
 
 h1 {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
-.svgBurger{
-    margin-top: 5px;
-    font-size: 2rem;
+.svgBurger {
+  margin-top: 5px;
+  font-size: 2rem;
 }
 
 .menu_display {
-    /* display: block; */
-    opacity: 1;
-    top: 50px;
+  /* display: block; */
+  opacity: 1;
+  top: 50px;
 }
 
 header nav {
-    position: absolute;
-    right: 15px;
-    top: -250px;
-    background-color: #999;
-    padding: 1rem;
-    /* display: none; */
-    opacity: 0;
-    transition: all 0.5s ease-out;
+  position: absolute;
+  right: 15px;
+  top: -250px;
+  background-color: #999;
+  padding: 1rem;
+  /* display: none; */
+  opacity: 0;
+  transition: all 0.5s ease-out;
 }
 header nav ul li {
-    list-style: none;
+  list-style: none;
 }
 
-
 #logo {
-    width: 2.5rem;
-    /* height: 3rem; */
+  width: 2.5rem;
+  /* height: 3rem; */
 }
 
 /*  main */
 
-/* section 1 */
-#section1 {
-    background-image: url(/img/stage.jpg);
-    background-size: cover;
-    height: 700px;
-    /* background-repeat: no-repeat; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 100%; */
-
+.bloc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
-
+/* section 1 */
+#hero {
+  background-image: url(/img/stage.jpg);
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 h3 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-
 button {
-    background-color: #ff0;
-    border: none;
-    padding: .5rem;
-
+  background-color: #ff0;
+  border: none;
+  padding: 0.5rem;
 }
 
 .card {
-    background-color: #000000;
-    color: #fff;
-    width: 80%;
-    max-width: 800px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-
+  background-color: #000000;
+  color: #fff;
+  width: 80%;
+  max-width: 800px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
 }
 
-#text{
-    min-width: 210px;
-    max-width: 600px;
-    margin-right: 10px;
+#text {
+  max-width: 600px;
+  margin-right: 10px;
 }
-
-#pochette{
-    background-image: url(/img/efe-kurnaz-unsplash.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 300px;
- }
 
 /* section 2 */
 
-#section2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem;
+#socialLink button {
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
 }
-
-#section2 button {
-    background-color: #000000;
-    color:#fff;
-    font-size: 1.5rem;
-    margin-top: 3rem;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    /* text-transform: uppercase; */
+#socialLink {
+  padding: 1rem;
 }
-
-#section2 button i {
-    padding-top: 5px;
-    margin-right: 10px;
+#socialLink button i {
+  padding-top: 5px;
+  margin-right: 10px;
 }
 
 .link i {
-    margin-right: 100px;
-    background-color: #000000;
+  margin-right: 100px;
+  background-color: #000000;
 }
 
 /* section 3 */
 
-#section3{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+#section3 {
+  text-align: center;
 }
 
-.artist{
-    /* width: 300px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
+.artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
 }
-
 
 /* section 4 */
 
-#section4{
-    background-color: #ff0;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#blog {
+  background-color: #ff0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.news{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* max-width: 220px; */
-    margin-bottom: 2rem;
+.news {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin: 1rem;
 }
 
 /* section 5 */
 
-#section5{
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#album {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card2{
-    width: 95%;
-    /* text-align: center; */
+.news {
+  max-width: 70%;
 }
 
-#section5 h2{
-    text-transform: uppercase;
+#section5 h2 {
+  text-transform: uppercase;
 }
 
-span{
-    color: #f00;
+span {
+  color: #f00;
 }
 
 /* section 6 */
-#section6{
-    background-color: #000000;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
-    text-transform: uppercase;
+#section6 {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  text-transform: uppercase;
 }
 
-.date{
-    margin-top: 2rem;
-    /* width: 300px; */
+.date {
+  margin: 1rem;
+  max-width: 400px;
 }
 
 /* section 7 */
-#section7{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+#discography {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.disc{
-    margin-top: 2rem;
+figure {
+  margin: 1rem;
+  position: relative;
+  width: 100%;
 }
 
-.disc img{
-    /* display: flex; */
-    /* justify-items: center; */
-    width: 100%;
+figcaption {
+  position: absolute;
+  display: flex;
+  top: 70%;
+  left: 45%;
+  background-color: #ffffffb4;
+  padding: 3px;
 }
 
 /* section 8 */
 
-#section8{
-    padding: 2rem;
-    background-color: #ff0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
+#section8 {
+  padding: 2rem;
+  background-color: #ff0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-#section8 i{
-    margin-top: 2rem;
-    font-size: 3rem;
+#section8 i {
+  margin: 1rem;
+  font-size: 3rem;
 }
 
 /* footer */
-footer{
-    padding: 3rem;
+footer {
+  padding: 3rem;
 }
 
 @media (min-width: 610px) {
-    #section2{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center; 
-        /* margin: 3rem; */
-    }
+  #menu_burger {
+    display: none;
+  }
+  header nav {
+    top: 0px;
+    opacity: 1;
+    position: relative;
+    background-color: #fff;
 
-    #section2 button{
-        
-        margin-right: 1rem;
-    }
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    margin-left: 0.5rem;
+  }
+
+  #menu_open {
+    display: flex;
+  }
+
+  .bloc {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .news {
+    width: 350px;
+  }
+
+  #pochette {
+    background-image: url(/img/efe-kurnaz-unsplash.jpg);
+    background-size: cover;
+    height: 300px;
+    width: calc(100% + 100px);
+  }
+  .disc img {
+    width: 300px;
+  }
+  #section8 button {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+  }
 }
-    
